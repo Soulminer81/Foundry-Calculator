@@ -1,0 +1,38 @@
+{
+  "eisen_erz": {
+    "name": "Eisenerz",
+    "image": "images/eisen_erz.svg"
+  },
+  "kupfer_erz": {
+    "name": "Kupfererz",
+    "image": "images/kupfer_erz.svg"
+  },
+  "crushed_eisen": {
+    "name": "Zerkleinertes Eisen",
+    "image": "images/crushed_eisen.svg"
+  },
+  "crushed_kupfer": {
+    "name": "Zerkleinertes Kupfer",
+    "image": "images/crushed_kupfer.svg"
+  },
+  "eisen": {
+    "name": "Eisenbarren",
+    "image": "images/eisen.svg"
+  },
+  "kupfer": {
+    "name": "Kupferbarren",
+    "image": "images/kupfer.svg"
+  },
+  "schaltkreis": {
+    "name": "Schaltkreis",
+    "image": "images/schaltkreis.svg"
+  },
+  "maisbot": {
+    "name": "Maisbot",
+    "image": "images/maisbot.svg"
+  },
+  "sauger": {
+    "name": "sauger",
+    "image": "images/sauger.svg"
+  }
+}

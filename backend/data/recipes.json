@@ -1,0 +1,75 @@
+{
+  "crushed_eisen": {
+    "type": "crushing",
+    "time": 2.0,
+    "inputs": {
+      "eisen_erz": 1
+    },
+    "outputs": {
+      "crushed_eisen": 1
+    }
+  },
+  "crushed_kupfer": {
+    "type": "crushing",
+    "time": 2.0,
+    "inputs": {
+      "kupfer_erz": 1
+    },
+    "outputs": {
+      "crushed_kupfer": 1
+    }
+  },
+  "eisen": {
+    "type": "smelting",
+    "time": 3.0,
+    "inputs": {
+      "crushed_eisen": 1
+    },
+    "outputs": {
+      "eisen": 1
+    }
+  },
+  "kupfer": {
+    "type": "smelting",
+    "time": 3.0,
+    "inputs": {
+      "crushed_kupfer": 1
+    },
+    "outputs": {
+      "kupfer": 1
+    }
+  },
+  "schaltkreis": {
+    "type": "assembling",
+    "time": 5.0,
+    "inputs": {
+      "eisen": 2,
+      "kupfer": 3
+    },
+    "outputs": {
+      "schaltkreis": 1
+    }
+  },
+  "maisbot": {
+    "type": "assembling",
+    "time": 12.0,
+    "inputs": {
+      "schaltkreis": 5,
+      "eisen": 10
+    },
+    "outputs": {
+      "maisbot": 1
+    }
+  },
+  "sauger": {
+    "type": "smelting",
+    "time": 2.0,
+    "inputs": {
+      "eisen_erz": 1,
+      "maisbot": 2
+    },
+    "outputs": {
+      "sauger": 1
+    }
+  }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundry Planer</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Vis.js Network -->
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar glass-panel">
+            <h1>⚙️ Foundry Planer</h1>
+            
+            <div class="control-group">
+                <label>Ziele (Endprodukte)</label>
+                <div id="targetsList"></div>
+                <button id="addTargetBtn" class="secondary-btn">+ Ziel hinzufügen</button>
+            </div>
+
+            <div class="settings-divider">Einstellungen</div>
+
+            <div class="control-group">
+                <label for="assemblerLevel">Maschinen-Level (Assembler)</label>
+                <select id="assemblerLevel">
+                    <option value="1">Level 1</option>
+                    <option value="2">Level 2</option>
+                    <option value="3">Level 3</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="smelterLevel">Smelter-Level</label>
+                <select id="smelterLevel">
+                    <option value="1">Level 1</option>
+                    <option value="2">Level 2</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="crusherLevel">Crusher-Level</label>
+                <select id="crusherLevel">
+                    <option value="1">Level 1</option>
+                    <option value="2">Level 2</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="minerLevel">Miner-Level</label>
+                <select id="minerLevel">
+                    <option value="1">Level 1</option>
+                    <option value="2">Level 2</option>
+                    <option value="3">Level 3</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="purityLevel">Metall-Reinheit</label>
+                <select id="purityLevel">
+                    <option value="unrein">Unrein (50%)</option>
+                    <option value="normal" selected>Normal (100%)</option>
+                    <option value="rein">Rein (200%)</option>
+                </select>
+            </div>
+
+            <button id="calculateBtn" class="primary-btn">Plan Berechnen</button>
+        </aside>
+
+        <!-- Main Diagram Area -->
+        <main class="diagram-area">
+            <div id="mynetwork"></div>
+        </main>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

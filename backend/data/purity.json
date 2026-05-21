@@ -1,0 +1,5 @@
+{
+  "unrein": {"yield": 0.5},
+  "normal": {"yield": 1.0},
+  "rein": {"yield": 2.0}
+}

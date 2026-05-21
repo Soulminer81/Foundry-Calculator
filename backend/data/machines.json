@@ -1,0 +1,15 @@
+{
+  "assembling": {
+    "1": {"speed": 0.5},
+    "2": {"speed": 1.0},
+    "3": {"speed": 1.5}
+  },
+  "smelting": {
+    "1": {"speed": 1.0},
+    "2": {"speed": 2.0}
+  },
+  "crushing": {
+    "1": {"speed": 0.75},
+    "2": {"speed": 1.5}
+  }
+}
