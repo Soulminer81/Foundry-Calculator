@@ -71,5 +71,17 @@
     "outputs": {
       "sauger": 1
     }
+  },
+  "dicke_ente": {
+    "type": "assembling",
+    "time": 15.0,
+    "inputs": {
+      "sauger": 1,
+      "kupfer_erz": 1,
+      "schaltkreis": 15
+    },
+    "outputs": {
+      "dicke_ente": 1
+    }
   }
 }

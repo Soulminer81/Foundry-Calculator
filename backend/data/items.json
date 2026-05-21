@@ -34,5 +34,9 @@
   "sauger": {
     "name": "sauger",
     "image": "images/sauger.svg"
+  },
+  "dicke_ente": {
+    "name": "Dicke_Ente",
+    "image": "images/dicke_ente.svg"
   }
 }
