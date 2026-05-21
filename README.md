@@ -1,33 +1,81 @@
-# Foundry Calculator
+Foundry Calculator
+Ein Produktionsplaner für dein Factory-Spiel mit visueller Graphvisualisierung und Rezept-Editor.
+⚠️ Status: Aktuell nur ein Prototyp - Das Repository wird noch aktiv aktualisiert. Features und Struktur können sich ändern.
+Features
 
-Ein Produktionsplaner für dein Factory-Spiel mit visueller Graphvisualisierung.
+📊 Produktionsplaner - Visualisiere Produktionsgraphen mit Vis.js
+🔧 Rezept-Editor - Erstelle und bearbeite Rezepte mit GUI
+⚙️ Machine-Berechnung - Automatische Berechnung von benötigten Maschinen/Minern basierend auf Settings
+🎨 Modernes UI - Schönes Frontend mit Echtzeit-Berechnung
 
-## Features
-- Rezept-Editor (GUI) mit `Factory_manager.py`
-- Produktionsplaner mit Vis.js-Diagrammen
-- Machine/Miner-Berechnung basierend auf Einstellungen
+Quick Start
+1. Produktionsplaner starten
+bashpython start_planner.py
+Das startet automatisch:
 
-## Setup
+FastAPI Backend auf http://127.0.0.1:8080
+Frontend öffnet sich im Browser
 
-1. **Backend starten**
-```bash
-   pip install fastapi uvicorn
-   python main.py
-```
-   Läuft auf: http://127.0.0.1:8000
+Dann kannst du:
 
-2. **Frontend öffnen**
-   Öffne `frontend/index.html` im Browser
-   (Oder serve mit `python -m http.server` im frontend-Ordner)
+Ziele (Endprodukte) hinzufügen
+Machine/Miner-Level einstellen
+Den Produktionsgraph live sehen
 
-3. **Rezepte bearbeiten**
-   Starte `Factory_manager.py` zum Erstellen/Bearbeiten von Rezepten
+2. Rezepte hinzufügen/bearbeiten
+bashpython Factory_manager.py
+Damit kannst du:
 
-## Dateistruktur
-- `main.py` - FastAPI Backend
-- `Factory_manager.py` - Tkinter GUI für Rezepte
-- `frontend/` - HTML/CSS/JS Interface
-- `backend/data/` - JSON Dateien (items, recipes, machines, etc.)
+Neue Rezepte erstellen
+Items definieren
+Zutaten und Zeiten festlegen
+Alles wird in JSON gespeichert
 
-## Lizenz
-MIT
+Dateistruktur
+Foundry-Calculator/
+├── start_planner.py          # 👈 Haupteinstieg für Production
+├── Factory_manager.py        # 👈 Nur für Rezept-Bearbeitung
+├── main.py                   # FastAPI Backend
+├── frontend/
+│   ├── index.html
+│   ├── app.js
+│   └── style.css
+├── backend/
+│   └── data/
+│       ├── items.json
+│       ├── recipes.json
+│       ├── machines.json
+│       ├── miners.json
+│       ├── purity.json
+│       └── belts.json
+└── LICENSE
+Abhängigkeiten
+
+Python 3.8+
+FastAPI
+Uvicorn
+Tkinter (für Factory_manager.py)
+
+Installation
+bashpip install fastapi uvicorn
+Tkinter ist meist schon installiert. Wenn nicht:
+
+Ubuntu/Debian: sudo apt-get install python3-tk
+macOS: Kommt mit Python
+Windows: Kommt mit Python
+
+Entwicklung
+Aktuell wird dieses Repository noch aktiv weiterentwickelt. Wenn du ändern möchtest:
+
+Starte Factory_manager.py um Rezepte zu bearbeiten
+Starte start_planner.py um die Ergebnisse zu testen
+JSON-Dateien in backend/data/ werden automatisch aktualisiert
+
+Lizenz
+MIT License - siehe LICENSE Datei
+Nächste Schritte (geplant)
+
+ Dark Mode
+ Export als SVG/PNG
+ Speichern von Plänen
+ Multi-language Support
