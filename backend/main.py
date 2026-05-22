@@ -151,7 +151,7 @@ def calculate(req: RequestData):
             "id": item_id,
             "label": node_label, 
             "title": tooltip, 
-            "image": m_image,
+            "image": image,
             "rate": total_rate,
             "machineCount": machines_needed_rounded,
             "isOutput": False

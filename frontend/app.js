@@ -161,7 +161,9 @@ async function calculatePlan() {
             
             if (n.image) {
                 nodeObj.shape = 'circularImage';
-                nodeObj.image = n.image;
+                
+                // GEÄNDERT: Zeitstempel verhindert das Caching der SVGs im Browser!
+                nodeObj.image = `${n.image}?v=${new Date().getTime()}`;
                 
                 // Style output nodes differently (green border)
                 if (n.isOutput) {
