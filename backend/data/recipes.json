@@ -83,5 +83,15 @@
     "outputs": {
       "dicke_ente": 1
     }
+  },
+  "xenoferrite_plate": {
+    "type": "smelting",
+    "time": 3.0,
+    "inputs": {
+      "xenoferrite_rubble": 1
+    },
+    "outputs": {
+      "xenoferrite_plate": 1
+    }
   }
 }

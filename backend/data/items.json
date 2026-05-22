@@ -38,5 +38,17 @@
   "dicke_ente": {
     "name": "Dicke_Ente",
     "image": "images/dicke_ente.svg"
+  },
+  "wasser": {
+    "name": "Wasser",
+    "image": "images/wasser.svg"
+  },
+  "xenoferrite_rubble": {
+    "name": "Xenoferrite_rubble",
+    "image": "images/xenoferrite_rubble.svg"
+  },
+  "xenoferrite_plate": {
+    "name": "xenoferrite_plate",
+    "image": "images/xenoferrite_plate.svg"
   }
 }
